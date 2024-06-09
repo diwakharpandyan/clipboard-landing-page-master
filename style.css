@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Bai Jamjuree, sans-serif;
+}
+header {
+  background-image: url(./images/bg-header-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+}
+.logo {
+  display: block;
+  margin: auto;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+main {
+  margin: 0 1rem 8rem 1rem;
+  text-align: center;
+}
+h1 {
+  margin-top: 0;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+p {
+  color: hsl(201, 11%, 66%);
+  margin: auto auto 3rem auto;
+  line-height: 1.5rem;
+  width: 90%;
+}
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 90%;
+  font-family: Bai Jamjuree, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.938);
+  border: none;
+  cursor: pointer;
+}
+.ios-button {
+  background-color: hsl(171, 66%, 44%);
+  border-bottom: 3px solid hsl(171, 99%, 29%);
+  box-shadow: 1px 2px 5px hsl(171, 66%, 44%);
+}
+.ios-button:hover {
+  background-color: hsl(172, 62%, 49%);
+}
+.mac-button {
+  background-color: hsl(233, 100%, 69%);
+  border-bottom: 3px solid hsl(233, 73%, 54%);
+  box-shadow: 1px 2px 5px hsl(233, 83%, 58%);
+}
+.mac-button:hover {
+  background-color: hsl(233, 100%, 74%);
+}
+h2 {
+  margin: 8rem auto 2rem auto;
+  width: 80%;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+.computer-image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+.devices-image {
+  width: 100%;
+}
+.company-logos-section {
+  margin-top: 8rem;
+}
+.company-logo {
+  display: block;
+  margin: auto auto 3rem auto;
+}
+a {
+  font-weight: 500;
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 3rem 1rem 3rem 1rem;
+  background-color: hsl(210, 12%, 97%);
+}
+.footer-logo-container {
+  width: 4rem;
+  margin: auto;
+}
+.footer-logo {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.social-media-icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.social-media-icon:hover {
+  cursor: pointer;
+}
+.facebook,
+.twitter {
+  margin-right: 2rem;
+}
+a:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.3rem;
+  }
+  header {
+    background-image: url(./images//bg-header-desktop.png);
+  }
+  main {
+    margin: 0;
+  }
+  button {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    width: 20%;
+  }
+  p {
+    width: 60%;
+  }
+  .computer-image {
+    object-position: -30px 0px;
+  }
+  .computer-image-text-section {
+    display: flex;
+    text-align: start;
+    align-items: center;
+  }
+  .computer-image-text-section h3 {
+    width: 60%;
+    margin: auto auto 2rem auto;
+  }
+  .devices-image-container {
+    width: 70%;
+    margin: auto;
+  }
+  .tools-section {
+    display: flex;
+    justify-content: center;
+  }
+  .tools-section div {
+    width: 25rem;
+  }
+  .company-logos-section {
+    display: flex;
+  }
+  .company-logo {
+    margin: auto;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    margin-top: 8rem;
+  }
+  .footer-segment-one {
+    width: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  a {
+    margin-bottom: 1rem;
+  }
+  .footer-logo-container {
+    margin: 0;
+  }
+  .footer-segment-one-column-four {
+    align-self: flex-start;
+  }
+  .footer-segment-two {
+    display: flex;
+    align-items: center;
+  }
+  .social-media-icons {
+    margin: 0;
+  }
+}
